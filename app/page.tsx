@@ -108,7 +108,7 @@ export default function HomePage() {
       </section>
 
       <footer className="footer">
-        <div>Based</div>
+        <div>Based 2026</div>
         <div className="footerLinks">
           <a href="/privacy">Privacy Policy</a>
           <a href="/terms">Terms of Service</a>
