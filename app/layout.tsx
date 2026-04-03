@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Based | Quotes that actually hit",
+  title: "Based",
   description:
     "Based is a quote app with honest reminders, themes, widgets, notifications, and custom looks built for real life.",
   icons: {
