@@ -1,127 +1,272 @@
 export default function PrivacyPage() {
   return (
     <main className="legalPage">
-      <p className="eyebrow">Legal</p>
-      <h1>Privacy Policy</h1>
+      <h1>Privacy Policy for Based</h1>
+      <p><strong>Last Updated:</strong> April 2026</p>
 
       <section>
+        <h2>Introduction</h2>
         <p>
-          This Privacy Policy explains how Based collects, uses, and protects information
-          when you use the Based app and website. By using Based, you agree to the
-          practices described here.
+          This Privacy Policy describes how Based ("we", "us", or "our") collects,
+          uses, and shares information when you use our mobile application
+          (the "App"). We are committed to protecting your privacy and being
+          transparent about our data practices.
         </p>
       </section>
 
       <section>
-        <h2>Who we are</h2>
+        <h2>Information we collect</h2>
+
+        <h3>1. Information you provide directly</h3>
+        <p>When you complete the onboarding process, we may collect:</p>
+
         <p>
-          Based is a quotes and motivation product focused mainly on the app experience,
-          including themes, widgets, reminders, favorites, streak-related activity, and
-          customization. If you have questions about this policy, you can contact us at
-          wemakeitbased@gmail.com.
+          Basic profile information: Name, age, and sex<br />
+          Quote preferences: Quote levels and categories you select<br />
+          Notification preferences: Whether you enable notifications, frequency
+          (notifications per day), and preferred time windows<br />
+          Widget usage: Whether you install the iOS widget<br />
+          Premium subscription data: Information about your trial and subscription status
+        </p>
+
+        <h3>2. Information automatically collected</h3>
+        <p>
+          Device information: Platform (iOS/Android), operating system version,
+          and app version<br />
+          Usage analytics: How you interact with the app, collected through
+          analytics tools<br />
+          Error and performance data: Technical information about app crashes
+          and errors<br />
+          Session recordings: Analytics tools may record user sessions to help
+          improve the app experience<br />
+          Purchase information: Subscription and payment data processed through
+          Apple or Google payment systems<br />
+          Conversion tracking data: Device identifiers (such as IDFA on iOS when
+          permission is granted) and app events collected for advertising measurement
+        </p>
+
+        <h3>3. Information stored locally on your device</h3>
+        <p>
+          The following data is stored only on your device and is not transmitted
+          to our servers:
+        </p>
+
+        <p>
+          Daily streak tracking data<br />
+          Your favorite quotes<br />
+          Custom themes you create<br />
+          Detailed notification preferences<br />
+          Selected quote categories
         </p>
       </section>
 
       <section>
-        <h2>Information you provide</h2>
+        <h2>How we use your information</h2>
+        <p>We use the collected information for the following purposes:</p>
+
         <p>
-          Based may store information you choose to save inside the app, such as favorite
-          quotes, selected levels, chosen themes, custom theme settings, widget
-          preferences, reminder timing, and similar in-app settings. If you contact us by
-          email, we will receive the information included in that message.
+          Service delivery: To provide personalized quotes and notifications
+          based on your preferences<br />
+          App improvement: To analyze usage patterns and improve functionality,
+          design, and user experience<br />
+          Customer support: To respond to your feedback and support requests<br />
+          Subscription management: To process and manage your premium subscription<br />
+          Error monitoring: To identify and fix technical issues and bugs<br />
+          Communication: To send important updates about the app (if you opt in)
         </p>
       </section>
 
       <section>
-        <h2>Information collected automatically</h2>
-        <p>
-          Depending on how Based is configured, the app or website may process basic
-          technical information needed for the product to function, such as device type,
-          app version, language settings, crash data, and interaction data related to
-          features like widgets, notifications, onboarding completion, and screen
-          performance.
-        </p>
-      </section>
+        <h2>Third-party services</h2>
+        <p>We may use the following third-party services that may collect information:</p>
 
-      <section>
-        <h2>How we use information</h2>
+        <p><strong>RevenueCat</strong></p>
         <p>
-          We use information to operate and improve Based, keep the app and website
-          working correctly, remember your settings, support widgets and notifications,
-          understand product issues, respond to support requests, and improve design and
-          content quality.
+          Purpose: Subscription and payment processing<br />
+          Data shared: User identifier, purchase information, subscription status<br />
+          Privacy policy: https://www.revenuecat.com/privacy
         </p>
-      </section>
 
-      <section>
-        <h2>Local storage and app preferences</h2>
+        <p><strong>Supabase</strong></p>
         <p>
-          A large part of the Based experience may be stored locally on your device so the
-          app can remember your chosen theme, favorites, widget setup, or custom style
-          decisions. Local app storage may remain on your device unless you remove the app
-          or clear the relevant data.
+          Purpose: Backend database for storing onboarding responses and feedback<br />
+          Data shared: Onboarding information associated with your user ID<br />
+          Privacy policy: https://supabase.com/privacy
         </p>
-      </section>
 
-      <section>
-        <h2>Notifications and widgets</h2>
+        <p><strong>Sentry</strong></p>
         <p>
-          If you enable reminders or widget features, Based may store timing preferences,
-          presentation settings, and related configuration so those features work as
-          expected. Notification delivery may depend on device settings and platform-level
-          permissions controlled by you.
+          Purpose: Error tracking and performance monitoring<br />
+          Data shared: Error logs, device information, IP address, and user context<br />
+          Privacy policy: https://sentry.io/privacy/
         </p>
-      </section>
 
-      <section>
-        <h2>Sharing of information</h2>
+        <p><strong>PostHog</strong></p>
         <p>
-          Based does not sell your personal information. We may share limited data with
-          service providers only when reasonably necessary to run, maintain, analyze, or
-          improve the app or website, or when required by law.
+          Purpose: Product analytics and session recording<br />
+          Data shared: Usage patterns, user interactions, session replays,
+          device information<br />
+          Privacy policy: https://posthog.com/privacy
+        </p>
+
+        <p><strong>Apple App Store / Google Play Store</strong></p>
+        <p>
+          Purpose: Payment processing for subscriptions<br />
+          Data shared: Payment information and purchase history handled
+          directly by Apple or Google
+        </p>
+
+        <p><strong>TikTok Pixel</strong></p>
+        <p>
+          Purpose: Conversion tracking and advertising measurement<br />
+          Data shared: Device identifiers (IDFA on iOS when permission is
+          granted) and app events such as installs or purchases<br />
+          Privacy policy: https://www.tiktok.com/legal/privacy-policy
+        </p>
+
+        <p>
+          Opt-out: You can opt out of tracking through iOS App Tracking
+          Transparency settings by denying tracking permission or by going to
+          Settings → Privacy & Security → Tracking on your device.
         </p>
       </section>
 
       <section>
         <h2>Data retention</h2>
+
         <p>
-          We keep information only for as long as reasonably necessary for the purposes
-          described in this policy, including operating the product, complying with legal
-          obligations, resolving disputes, and enforcing agreements.
+          Account data: We retain onboarding data for as long as you use the app.
+          You may request deletion at any time.
+        </p>
+
+        <p>
+          Analytics data: Retained according to third-party provider policies
+          (typically between 90 days and 2 years).
+        </p>
+
+        <p>
+          Local data: Data stored on your device remains until you uninstall the
+          app or clear the app’s data.
         </p>
       </section>
 
       <section>
-        <h2>Children&apos;s privacy</h2>
+        <h2>Data security</h2>
         <p>
-          Based is not intended for children under the age required by applicable law in
-          your region to use the product without parental involvement. If you believe a
-          child has provided personal information to us, please contact us so we can take
-          appropriate action.
+          We implement appropriate technical and organizational measures to
+          protect your personal information including:
+        </p>
+
+        <p>
+          Encrypted connections (HTTPS/TLS)<br />
+          Secure storage practices<br />
+          Regular security updates and monitoring<br />
+          Limited access to personal data by authorized personnel only
+        </p>
+
+        <p>
+          However, no method of internet transmission or electronic storage is
+          completely secure and we cannot guarantee absolute security.
         </p>
       </section>
 
       <section>
-        <h2>Your choices</h2>
+        <h2>Your privacy rights</h2>
         <p>
-          You can manage app permissions such as notifications through your device
-          settings. You can also stop using the website or uninstall the app at any time.
-          If you want to request deletion of support emails or ask a privacy question,
-          contact wemakeitbased@gmail.com.
+          Depending on your location you may have the following rights:
+        </p>
+
+        <p>
+          Access: Request a copy of your personal data<br />
+          Correction: Request correction of inaccurate data<br />
+          Deletion: Request deletion of your personal data<br />
+          Portability: Request your data in a portable format<br />
+          Opt-out: Opt out of analytics or communications<br />
+          Withdraw consent: Withdraw consent for data processing
+        </p>
+
+        <p>
+          To exercise these rights please contact us using the email below.
         </p>
       </section>
 
       <section>
-        <h2>Changes to this policy</h2>
+        <h2>Children's privacy</h2>
         <p>
-          We may update this Privacy Policy from time to time. When we do, we will update
-          the effective date below. Continued use of Based after changes means you accept
-          the revised policy.
+          The app is not intended for children under the age of 13 (or the
+          applicable age of digital consent in your jurisdiction). We do not
+          knowingly collect personal information from children.
         </p>
       </section>
 
       <section>
-        <p>Last updated: April 2026</p>
+        <h2>Push notifications</h2>
+        <p>
+          Based uses local push notifications to deliver quotes based on your
+          preferences.
+        </p>
+
+        <p>
+          Notifications are scheduled locally on your device<br />
+          Based on your selected categories and preferences<br />
+          Optional and can be disabled anytime in settings<br />
+          Not used for marketing or advertising messages
+        </p>
+      </section>
+
+      <section>
+        <h2>Changes to this privacy policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time. We will notify
+          users by updating the "Last Updated" date and publishing the updated
+          policy in the app or website.
+        </p>
+      </section>
+
+      <section>
+        <h2>European users (GDPR)</h2>
+        <p>
+          As this app is operated in the European Union, we comply with the
+          General Data Protection Regulation (GDPR).
+        </p>
+
+        <p>
+          Your rights include access, rectification, erasure, restriction of
+          processing, data portability, objection to processing, and the right
+          to withdraw consent.
+        </p>
+      </section>
+
+      <section>
+        <h2>Contact us</h2>
+
+        <p>
+          If you have questions about this Privacy Policy or our data practices,
+          please contact us:
+        </p>
+
+        <p>
+          Email: wemakeitbased@gmail.com<br />
+          App: Based<br />
+          Location: Denmark
+        </p>
+      </section>
+
+      <section>
+        <h2>Cookie policy</h2>
+        <p>
+          The Based app does not use cookies directly. However, third-party
+          analytics providers may use similar technologies for analytics
+          purposes.
+        </p>
+      </section>
+
+      <section>
+        <p>
+          By using the Based app, you acknowledge that you have read and
+          understood this Privacy Policy and agree to the collection, use,
+          and sharing of information as described.
+        </p>
       </section>
     </main>
   );
