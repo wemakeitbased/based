@@ -1,7 +1,3 @@
-# Based landing page
-
-A Vercel-ready Next.js landing page inspired by the structure of glowdaily.app, but rewritten and redesigned for **Based**.
-
 ## Run locally
 
 ```bash
