@@ -20,6 +20,7 @@ const featureSections = [
     alt: "Based custom theme preview",
     reverse: false,
   },
+]
 
 export default function HomePage() {
   return (
