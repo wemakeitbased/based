@@ -22,6 +22,9 @@ img { display: block; max-width: 100%; }
   margin: 0 auto;
 }
 .hero { padding: 28px 0 24px; }
+.heroImage {
+  mix-blend-mode: lighten;
+}
 .brandRow {
   display: inline-flex;
   align-items: center;
