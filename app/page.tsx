@@ -20,7 +20,14 @@ const featureSections = [
     alt: "Based custom theme preview",
     reverse: false,
   },
-]
+];
+
+const cards = [
+  "Quotes that hit.",
+  "Themes that carry through.",
+  "Widgets that look clean.",
+  "Honest reminders.",
+];
 
 export default function HomePage() {
   return (
@@ -35,15 +42,18 @@ export default function HomePage() {
           <div className="heroCopy">
             <p className="eyebrow">A Based app for you</p>
             <h1>Quotes that actually hit.</h1>
-            
 
             <div className="heroActions">
-               <a className="downloadButton" href="mailto:wemakeitbased@gmail.com" aria-label="Download on iOS">
-                  <span className="appleMark"></span>
-                  <span>Download on iOS</span>
-               </a>
+              <a
+                className="downloadButton"
+                href="mailto:wemakeitbased@gmail.com"
+                aria-label="Download on iOS"
+              >
+                <span className="appleMark"></span>
+                <span>Download on iOS</span>
+              </a>
             </div>
-
+          </div>
 
           <div className="phoneShowcase heroSingle">
             <img
@@ -68,8 +78,8 @@ export default function HomePage() {
           <p className="eyebrow">Simple by design</p>
           <h2>The app experience, shown properly.</h2>
           <p>
-            These are real screens from Based, from notification flow to theme selection
-            to fully custom looks.
+            These are real screens from Based, from notification flow to theme
+            selection to fully custom looks.
           </p>
         </div>
 
@@ -84,8 +94,13 @@ export default function HomePage() {
                 <h3>{section.title}</h3>
                 <p>{section.text}</p>
               </div>
+
               <div className="featureShotWrap">
-                <img className="featureShot" src={section.image} alt={section.alt} />
+                <img
+                  className="featureShot"
+                  src={section.image}
+                  alt={section.alt}
+                />
               </div>
             </article>
           ))}
