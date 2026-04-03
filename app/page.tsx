@@ -20,14 +20,6 @@ const featureSections = [
     alt: "Based custom theme preview",
     reverse: false,
   },
-];
-
-const cards = [
-  "Quotes that land.",
-  "Themes that carry through.",
-  "Widgets that look clean.",
-  "Honest daily reminders.",
-];
 
 export default function HomePage() {
   return (
@@ -40,26 +32,17 @@ export default function HomePage() {
 
         <div className="heroGrid">
           <div className="heroCopy">
-            <p className="eyebrow">Quote app for real life</p>
+            <p className="eyebrow">A Based app for you</p>
             <h1>Quotes that actually hit.</h1>
-            <p className="lead">
-              Based is built for people who want honest motivation, sharp design,
-              customizable themes, clean widgets, and reminders that feel more real than fluffy.
-            </p>
+            
 
             <div className="heroActions">
-              <a className="primaryButton" href="#features">
-                Explore the app
-              </a>
-              <a className="secondaryButton" href="/privacy">
-                Privacy
-              </a>
+               <a className="downloadButton" href="mailto:wemakeitbased@gmail.com" aria-label="Download on iOS">
+                  <span className="appleMark"></span>
+                  <span>Download on iOS</span>
+               </a>
             </div>
 
-            <div className="microProof">
-              Made for the app experience first, with the website built around it.
-            </div>
-          </div>
 
           <div className="phoneShowcase heroSingle">
             <img
@@ -109,7 +92,7 @@ export default function HomePage() {
       </section>
 
       <footer className="footer">
-        <div>Based · Honest quotes, themes, widgets, and reminders</div>
+        <div>Based</div>
         <div className="footerLinks">
           <a href="/privacy">Privacy Policy</a>
           <a href="/terms">Terms of Service</a>
