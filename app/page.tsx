@@ -2,7 +2,7 @@ const featureSections = [
   {
     title: "Reality, one swipe away.",
     text: "Choose when quotes arrive and get honest reminders that actually feel like they belong on your phone.",
-    image: "/shot1.png",
+    image: "/3.png",
     alt: "Based onboarding and notification preview",
     reverse: false,
   },
