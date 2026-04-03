@@ -22,9 +22,6 @@ img { display: block; max-width: 100%; }
   margin: 0 auto;
 }
 .hero { padding: 28px 0 24px; }
-.heroImage {
-  mix-blend-mode: screen;
-}
 .brandRow {
   display: inline-flex;
   align-items: center;
@@ -111,6 +108,7 @@ h1 {
 }
 .heroImage {
   width: min(420px, 100%);
+  mix-blend-mode: screen;
 }
 
 .strip {
