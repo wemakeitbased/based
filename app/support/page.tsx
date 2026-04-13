@@ -6,42 +6,32 @@ export default function SupportPage() {
 
       <section>
         <h2>Contact Support</h2>
-
         <p>
           If you need help with the Based app, subscriptions, or any technical
           issue, you can contact us directly.
         </p>
-
         <p>
           Email: <a href="mailto:wemakeitbased@gmail.com">wemakeitbased@gmail.com</a>
         </p>
-
-        <p>
-          We usually respond within 24–48 hours.
-        </p>
+        <p>We usually respond within 24–48 hours.</p>
       </section>
 
       <section>
         <h2>FAQs</h2>
 
         <div className="faqList">
-
           <details className="faqItem">
             <summary>How do I cancel my subscription?</summary>
             <div className="faqAnswer">
               <p>Subscriptions are managed through your Apple App Store account.</p>
-
               <p>
-                1. Open Settings on your iPhone<br/>
-                2. Tap your Apple ID<br/>
-                3. Tap Subscriptions<br/>
-                4. Select Based<br/>
+                1. Open Settings on your iPhone<br />
+                2. Tap your Apple ID<br />
+                3. Tap Subscriptions<br />
+                4. Select Based<br />
                 5. Tap Cancel Subscription
               </p>
-
-              <p>
-                Your subscription will remain active until the end of the billing period.
-              </p>
+              <p>Your subscription will remain active until the end of the billing period.</p>
             </div>
           </details>
 
@@ -49,13 +39,11 @@ export default function SupportPage() {
             <summary>I purchased Premium but it is not unlocked</summary>
             <div className="faqAnswer">
               <p>Try the following:</p>
-
               <p>
-                1. Open the Based app<br/>
-                2. Go to Profile → Subscription<br/>
+                1. Open the Based app<br />
+                2. Go to Profile → Subscription<br />
                 3. Tap Restore Purchase
               </p>
-
               <p>
                 If the issue continues, contact support and include your Apple purchase receipt.
               </p>
@@ -85,17 +73,15 @@ export default function SupportPage() {
             <summary>How do I report a bug?</summary>
             <div className="faqAnswer">
               <p>Please email wemakeitbased@gmail.com</p>
-
               <p>
-                Include:<br/>
-                Your device model<br/>
-                Your iOS version<br/>
-                Description of the issue<br/>
+                Include:<br />
+                Your device model<br />
+                Your iOS version<br />
+                Description of the issue<br />
                 Screenshots if possible
               </p>
             </div>
           </details>
-
         </div>
       </section>
     </main>
