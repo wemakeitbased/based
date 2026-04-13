@@ -8,39 +8,35 @@ export const metadata = {
 export default function SupportPage() {
   return (
     <main className="min-h-screen bg-[#f5f5f3] px-6 py-20 text-black">
-      <div className="mx-auto max-w-3xl">
+      <div className="mx-auto max-w-2xl">
 
-        <h1 className="text-5xl font-bold tracking-tight sm:text-6xl">
-          Support
-        </h1>
+        <h1 className="text-5xl font-bold">Support</h1>
 
         <p className="mt-4 text-sm text-black/60">
           Last Updated: April 2026
         </p>
 
-        {/* CONTACT */}
-
         <section className="mt-12">
-          <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+          <h2 className="text-3xl font-semibold">
             Contact Support
           </h2>
 
-          <p className="mt-5 text-base leading-7 text-black/80">
-            If you need help with the Based app, subscriptions, or any technical
-            issue, you can contact us directly.
+          <p className="mt-5 text-black/80">
+            If you need help with the Based app, subscriptions, or any technical issue,
+            you can contact us directly.
           </p>
 
-          <p className="mt-4 text-base">
+          <p className="mt-4">
             Email:{" "}
             <a
               href="mailto:wemakeitbased@gmail.com"
-              className="underline underline-offset-4"
+              className="underline"
             >
               wemakeitbased@gmail.com
             </a>
           </p>
 
-          <p className="mt-4 text-base text-black/80">
+          <p className="mt-4 text-black/80">
             We usually respond within 24–48 hours.
           </p>
         </section>
@@ -49,28 +45,32 @@ export default function SupportPage() {
 
         <section className="mt-16">
 
-          <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+          <h2 className="text-3xl font-semibold">
             Frequently Asked Questions
           </h2>
 
-          <div className="mt-8 space-y-4">
+          <div className="mt-8 divide-y divide-black/10">
 
-            {/* QUESTION 1 */}
+            {/* Q1 */}
 
-            <details className="group rounded-xl border border-black/10 bg-white/70 p-5">
-              <summary className="flex cursor-pointer items-center justify-between text-lg font-semibold">
-                How do I cancel my subscription?
-                <span className="text-2xl transition-transform group-open:rotate-45">
+            <details className="group py-4">
+              <summary className="flex cursor-pointer list-none items-center justify-between text-lg font-medium">
+
+                <span>How do I cancel my subscription?</span>
+
+                <span className="text-xl transition-transform group-open:rotate-45">
                   +
                 </span>
+
               </summary>
 
-              <div className="pt-4">
-                <p className="text-base text-black/80">
+              <div className="mt-4 text-black/80 space-y-3">
+
+                <p>
                   Subscriptions are managed through your Apple App Store account.
                 </p>
 
-                <ol className="mt-4 list-decimal pl-6 space-y-2 text-black/80">
+                <ol className="list-decimal pl-6 space-y-2">
                   <li>Open Settings on your iPhone</li>
                   <li>Tap your Apple ID</li>
                   <li>Tap Subscriptions</li>
@@ -78,56 +78,59 @@ export default function SupportPage() {
                   <li>Tap Cancel Subscription</li>
                 </ol>
 
-                <p className="mt-4 text-black/80">
+                <p>
                   Your subscription will remain active until the end of the billing period.
                 </p>
+
               </div>
             </details>
 
+            {/* Q2 */}
 
-            {/* QUESTION 2 */}
+            <details className="group py-4">
+              <summary className="flex cursor-pointer list-none items-center justify-between text-lg font-medium">
 
-            <details className="group rounded-xl border border-black/10 bg-white/70 p-5">
-              <summary className="flex cursor-pointer items-center justify-between text-lg font-semibold">
-                I purchased Premium but it is not unlocked
-                <span className="text-2xl transition-transform group-open:rotate-45">
+                <span>I purchased Premium but it is not unlocked</span>
+
+                <span className="text-xl transition-transform group-open:rotate-45">
                   +
                 </span>
+
               </summary>
 
-              <div className="pt-4">
+              <div className="mt-4 text-black/80 space-y-3">
 
-                <p className="text-black/80">
-                  Try the following:
-                </p>
+                <p>Try the following:</p>
 
-                <ol className="mt-4 list-decimal pl-6 space-y-2 text-black/80">
+                <ol className="list-decimal pl-6 space-y-2">
                   <li>Open the Based app</li>
                   <li>Go to Profile → Subscription</li>
                   <li>Tap Restore Purchase</li>
                 </ol>
 
-                <p className="mt-4 text-black/80">
+                <p>
                   If the issue continues, contact support and include your Apple purchase receipt.
                 </p>
 
               </div>
             </details>
 
+            {/* Q3 */}
 
-            {/* QUESTION 3 */}
+            <details className="group py-4">
+              <summary className="flex cursor-pointer list-none items-center justify-between text-lg font-medium">
 
-            <details className="group rounded-xl border border-black/10 bg-white/70 p-5">
-              <summary className="flex cursor-pointer items-center justify-between text-lg font-semibold">
-                How do quote levels work?
-                <span className="text-2xl transition-transform group-open:rotate-45">
+                <span>How do quote levels work?</span>
+
+                <span className="text-xl transition-transform group-open:rotate-45">
                   +
                 </span>
+
               </summary>
 
-              <div className="pt-4">
+              <div className="mt-4 text-black/80">
 
-                <p className="text-black/80">
+                <p>
                   You can adjust the level using the upper bar to receive anything
                   from light motivation to the most brutal quotes.
                 </p>
@@ -135,48 +138,52 @@ export default function SupportPage() {
               </div>
             </details>
 
+            {/* Q4 */}
 
-            {/* QUESTION 4 */}
+            <details className="group py-4">
+              <summary className="flex cursor-pointer list-none items-center justify-between text-lg font-medium">
 
-            <details className="group rounded-xl border border-black/10 bg-white/70 p-5">
-              <summary className="flex cursor-pointer items-center justify-between text-lg font-semibold">
-                How do streaks work?
-                <span className="text-2xl transition-transform group-open:rotate-45">
+                <span>How do streaks work?</span>
+
+                <span className="text-xl transition-transform group-open:rotate-45">
                   +
                 </span>
+
               </summary>
 
-              <div className="pt-4">
+              <div className="mt-4 text-black/80 space-y-3">
 
-                <p className="text-black/80">
+                <p>
                   Your streak increases every day you open the app and interact with quotes.
                 </p>
 
-                <p className="mt-3 text-black/80">
+                <p>
                   Missing a day resets the streak unless streak protection is active.
                 </p>
 
-                <p className="mt-3 text-black/80">
+                <p>
                   Free users receive additional likes after reaching certain streak milestones.
                 </p>
 
               </div>
             </details>
 
+            {/* Q5 */}
 
-            {/* QUESTION 5 */}
+            <details className="group py-4">
+              <summary className="flex cursor-pointer list-none items-center justify-between text-lg font-medium">
 
-            <details className="group rounded-xl border border-black/10 bg-white/70 p-5">
-              <summary className="flex cursor-pointer items-center justify-between text-lg font-semibold">
-                How do I report a bug?
-                <span className="text-2xl transition-transform group-open:rotate-45">
+                <span>How do I report a bug?</span>
+
+                <span className="text-xl transition-transform group-open:rotate-45">
                   +
                 </span>
+
               </summary>
 
-              <div className="pt-4">
+              <div className="mt-4 text-black/80 space-y-3">
 
-                <p className="text-black/80">
+                <p>
                   Please email{" "}
                   <a
                     href="mailto:wemakeitbased@gmail.com"
@@ -186,11 +193,7 @@ export default function SupportPage() {
                   </a>
                 </p>
 
-                <p className="mt-3 text-black/80">
-                  Include:
-                </p>
-
-                <ul className="mt-3 list-disc pl-6 space-y-2 text-black/80">
+                <ul className="list-disc pl-6 space-y-2">
                   <li>Your device model</li>
                   <li>Your iOS version</li>
                   <li>Description of the issue</li>
