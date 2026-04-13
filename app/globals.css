@@ -309,9 +309,9 @@ h2 {
 }
 
 .legalPage {
-  width: min(760px, calc(100% - 32px));
+  max-width: 900px;
   margin: 0 auto;
-  padding: 72px 0;
+  padding: 60px 24px;
 }
 
 .legalPage h1 {
