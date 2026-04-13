@@ -7,19 +7,30 @@ export const metadata = {
 
 export default function SupportPage() {
   return (
-    <main className="min-h-screen px-6 py-16">
+    <main className="min-h-screen bg-[#f5f5f3] px-6 py-20 text-black">
       <div className="mx-auto max-w-3xl">
-        <h1 className="text-4xl font-bold tracking-tight">Support</h1>
 
-        <p className="mt-4 text-sm text-neutral-600">Last Updated: April 2026</p>
+        <h1 className="text-5xl font-bold tracking-tight sm:text-6xl">
+          Support
+        </h1>
 
-        <section className="mt-10">
-          <h2 className="text-2xl font-semibold">Contact Support</h2>
-          <p className="mt-4">
+        <p className="mt-4 text-sm text-black/60">
+          Last Updated: April 2026
+        </p>
+
+        {/* CONTACT */}
+
+        <section className="mt-12">
+          <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+            Contact Support
+          </h2>
+
+          <p className="mt-5 text-base leading-7 text-black/80">
             If you need help with the Based app, subscriptions, or any technical
             issue, you can contact us directly.
           </p>
-          <p className="mt-4">
+
+          <p className="mt-4 text-base">
             Email:{" "}
             <a
               href="mailto:wemakeitbased@gmail.com"
@@ -28,113 +39,170 @@ export default function SupportPage() {
               wemakeitbased@gmail.com
             </a>
           </p>
-          <p className="mt-4">We usually respond within 24–48 hours.</p>
+
+          <p className="mt-4 text-base text-black/80">
+            We usually respond within 24–48 hours.
+          </p>
         </section>
 
-        <section className="mt-10">
-          <h2 className="text-2xl font-semibold">Frequently Asked Questions</h2>
+        {/* FAQ */}
 
-          <div className="mt-6 space-y-8">
-            <div>
-              <h3 className="text-xl font-semibold">
+        <section className="mt-16">
+
+          <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+            Frequently Asked Questions
+          </h2>
+
+          <div className="mt-8 space-y-4">
+
+            {/* QUESTION 1 */}
+
+            <details className="group rounded-xl border border-black/10 bg-white/70 p-5">
+              <summary className="flex cursor-pointer items-center justify-between text-lg font-semibold">
                 How do I cancel my subscription?
-              </h3>
-              <p className="mt-3">
-                Subscriptions are managed through your Apple App Store account.
-              </p>
-              <ol className="mt-4 list-decimal space-y-2 pl-6">
-                <li>Open Settings on your iPhone</li>
-                <li>Tap your Apple ID</li>
-                <li>Tap Subscriptions</li>
-                <li>Select Based</li>
-                <li>Tap Cancel Subscription</li>
-              </ol>
-              <p className="mt-4">
-                Your subscription will remain active until the end of the billing
-                period.
-              </p>
-            </div>
+                <span className="text-2xl transition-transform group-open:rotate-45">
+                  +
+                </span>
+              </summary>
 
-            <div>
-              <h3 className="text-xl font-semibold">
+              <div className="pt-4">
+                <p className="text-base text-black/80">
+                  Subscriptions are managed through your Apple App Store account.
+                </p>
+
+                <ol className="mt-4 list-decimal pl-6 space-y-2 text-black/80">
+                  <li>Open Settings on your iPhone</li>
+                  <li>Tap your Apple ID</li>
+                  <li>Tap Subscriptions</li>
+                  <li>Select Based</li>
+                  <li>Tap Cancel Subscription</li>
+                </ol>
+
+                <p className="mt-4 text-black/80">
+                  Your subscription will remain active until the end of the billing period.
+                </p>
+              </div>
+            </details>
+
+
+            {/* QUESTION 2 */}
+
+            <details className="group rounded-xl border border-black/10 bg-white/70 p-5">
+              <summary className="flex cursor-pointer items-center justify-between text-lg font-semibold">
                 I purchased Premium but it is not unlocked
-              </h3>
-              <p className="mt-3">Try the following:</p>
-              <ol className="mt-4 list-decimal space-y-2 pl-6">
-                <li>Open the Based app</li>
-                <li>Go to Profile → Subscription</li>
-                <li>Tap Restore Purchase</li>
-              </ol>
-              <p className="mt-4">
-                If the issue continues, contact support and include your Apple
-                purchase receipt.
-              </p>
-            </div>
+                <span className="text-2xl transition-transform group-open:rotate-45">
+                  +
+                </span>
+              </summary>
 
-            <div>
-              <h3 className="text-xl font-semibold">How do quote levels work?</h3>
-              <p className="mt-3">
-                You can adjust the level using the upper bar to receive anything
-                from light motivation to the most brutal quotes.
-              </p>
-            </div>
+              <div className="pt-4">
 
-            <div>
-              <h3 className="text-xl font-semibold">How do streaks work?</h3>
-              <p className="mt-3">
-                Your streak increases every day you open the app and interact with
-                quotes.
-              </p>
-              <p className="mt-3">
-                Missing a day resets the streak unless streak protection is active.
-              </p>
-              <p className="mt-3">
-                Free users receive additional likes after reaching certain streak
-                milestones.
-              </p>
-            </div>
+                <p className="text-black/80">
+                  Try the following:
+                </p>
 
-            <div>
-              <h3 className="text-xl font-semibold">How do I report a bug?</h3>
-              <p className="mt-3">
-                Please email{" "}
-                <a
-                  href="mailto:wemakeitbased@gmail.com"
-                  className="underline underline-offset-4"
-                >
-                  wemakeitbased@gmail.com
-                </a>
-                .
-              </p>
-              <p className="mt-3">Include:</p>
-              <ul className="mt-4 list-disc space-y-2 pl-6">
-                <li>your device model</li>
-                <li>your iOS version</li>
-                <li>a description of the issue</li>
-                <li>screenshots if possible</li>
-              </ul>
-              <p className="mt-4">This helps us fix problems faster.</p>
-            </div>
+                <ol className="mt-4 list-decimal pl-6 space-y-2 text-black/80">
+                  <li>Open the Based app</li>
+                  <li>Go to Profile → Subscription</li>
+                  <li>Tap Restore Purchase</li>
+                </ol>
 
-            <div>
-              <h3 className="text-xl font-semibold">Feature requests</h3>
-              <p className="mt-3">
-                Have an idea for new quotes, themes, or features?
-              </p>
-              <p className="mt-3">
-                Send it to{" "}
-                <a
-                  href="mailto:wemakeitbased@gmail.com"
-                  className="underline underline-offset-4"
-                >
-                  wemakeitbased@gmail.com
-                </a>
-                .
-              </p>
-              <p className="mt-3">We read every suggestion.</p>
-            </div>
+                <p className="mt-4 text-black/80">
+                  If the issue continues, contact support and include your Apple purchase receipt.
+                </p>
+
+              </div>
+            </details>
+
+
+            {/* QUESTION 3 */}
+
+            <details className="group rounded-xl border border-black/10 bg-white/70 p-5">
+              <summary className="flex cursor-pointer items-center justify-between text-lg font-semibold">
+                How do quote levels work?
+                <span className="text-2xl transition-transform group-open:rotate-45">
+                  +
+                </span>
+              </summary>
+
+              <div className="pt-4">
+
+                <p className="text-black/80">
+                  You can adjust the level using the upper bar to receive anything
+                  from light motivation to the most brutal quotes.
+                </p>
+
+              </div>
+            </details>
+
+
+            {/* QUESTION 4 */}
+
+            <details className="group rounded-xl border border-black/10 bg-white/70 p-5">
+              <summary className="flex cursor-pointer items-center justify-between text-lg font-semibold">
+                How do streaks work?
+                <span className="text-2xl transition-transform group-open:rotate-45">
+                  +
+                </span>
+              </summary>
+
+              <div className="pt-4">
+
+                <p className="text-black/80">
+                  Your streak increases every day you open the app and interact with quotes.
+                </p>
+
+                <p className="mt-3 text-black/80">
+                  Missing a day resets the streak unless streak protection is active.
+                </p>
+
+                <p className="mt-3 text-black/80">
+                  Free users receive additional likes after reaching certain streak milestones.
+                </p>
+
+              </div>
+            </details>
+
+
+            {/* QUESTION 5 */}
+
+            <details className="group rounded-xl border border-black/10 bg-white/70 p-5">
+              <summary className="flex cursor-pointer items-center justify-between text-lg font-semibold">
+                How do I report a bug?
+                <span className="text-2xl transition-transform group-open:rotate-45">
+                  +
+                </span>
+              </summary>
+
+              <div className="pt-4">
+
+                <p className="text-black/80">
+                  Please email{" "}
+                  <a
+                    href="mailto:wemakeitbased@gmail.com"
+                    className="underline"
+                  >
+                    wemakeitbased@gmail.com
+                  </a>
+                </p>
+
+                <p className="mt-3 text-black/80">
+                  Include:
+                </p>
+
+                <ul className="mt-3 list-disc pl-6 space-y-2 text-black/80">
+                  <li>Your device model</li>
+                  <li>Your iOS version</li>
+                  <li>Description of the issue</li>
+                  <li>Screenshots if possible</li>
+                </ul>
+
+              </div>
+            </details>
+
           </div>
         </section>
+
       </div>
     </main>
   );
