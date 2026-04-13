@@ -404,4 +404,56 @@ h2 {
 .faqAnswer p {
   margin: 12px 0;
 }
+  .legalPage {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+.faqList {
+  margin-top: 30px;
+}
+
+.faqItem {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.faqItem:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.faqItem summary {
+  list-style: none;
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding: 26px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faqItem summary::-webkit-details-marker {
+  display: none;
+}
+
+.faqItem summary::after {
+  content: "+";
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.faqItem[open] summary::after {
+  content: "−";
+}
+
+.faqAnswer {
+  padding-bottom: 26px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.faqAnswer p {
+  margin: 12px 0;
+}
 }
